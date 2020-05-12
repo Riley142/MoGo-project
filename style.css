@@ -1,0 +1,702 @@
+/* Colors
+#e78182 - salmon bckg
+#eda580 - bck middle orange
+#fce38a - bck,  hover nav font yellow
+#303030 - main font
+#9e9e9e - paragraphs
+
+Fonts
+font-family: 'Montserrat', sans-serif; 300 / 500 / 700
+font-family: 'Roboto', sans-serif;   - 300 & italic
+font-family: 'Kaushan Script', cursive;
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+::selection {
+    background-color: #e77474;
+    color: #303030;
+}
+
+ /* ----------------- Nav---------------------- */
+
+ nav {
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-areas:
+     "logo . navv navicon";
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ nav ul {
+     grid-area: navv;
+     display: flex;
+     align-self: center;
+     margin-top: -0.25rem;
+ }
+
+ .logo {
+    grid-area: logo;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navicon {
+    grid-area: navicon;
+    overflow: hidden;
+    color: #FFFFFF
+}
+
+nav li { list-style: none; }
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: #fff;
+}
+
+.navv a:hover {
+    color: #fce38a;
+    border-bottom:  solid 3px #fce38a;
+    transition: 0.5s ;
+}
+
+/* ---------------------Hero--------------------------- */
+.hero {
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(231, 116, 116, 0.95), rgba(252, 227, 138, 0.9)), url("img/header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    color:#fff;
+    margin: 6rem 0 -3rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.bar {
+    margin: 0 auto 3rem auto;
+    width: 80px;
+    border-bottom: 3px solid #fff;
+}
+
+.btn1 {
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    scale: 1.1;
+}
+.btmnav { margin: 0; }
+
+.btmnav ul {
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.btmnav li {
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btmnav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-top: 2px solid #fff;
+}
+
+.btmnav a:hover {
+    color: #95e1d3;
+    border-top: 2px solid #95e1d3;
+}
+
+/* -------------------  About ------------------ */
+.about {
+    max-width: 1200px;
+    width: 95%;
+    margin:auto;
+}
+
+h4 {
+    margin: 4rem 0 -1rem 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    color: #303030;
+}
+
+h3 {
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.bar2 {
+    margin: 3rem auto 3rem auto;
+    width: 60px;
+    border-bottom: 3px solid #e77474;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #9e9e9e;
+}
+
+.abtphotos {                            /* change size on media */
+    max-width: 1200px;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 80%));
+    gap: 2rem;
+}
+
+.abtphotos img {
+    width: 100%;
+}
+
+.abtphotos img:hover {
+    box-shadow: 10px 10px #95e1d3;
+    transition: 0.35s;
+}
+
+/*--------------------Counter-------------------- */
+.counter {
+    margin-top: 7rem;
+    padding-bottom: 4rem;
+    background-color: #95e1d3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:0.5rem;
+    align-content: center;
+}
+
+h5 {
+    margin-bottom: -1rem;
+    font-size: 3.5rem;               /* change on media q to smaller! */
+    color: #fff;
+}
+
+.counter p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+/* -----------------Amazing Services ------------------*/
+h6 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color:#303030;
+}
+
+.serv {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/*------------------Unique design-------------*/
+
+.unique {
+    margin-top: 4rem;
+    height: 100vh;
+    background-image: url(/img/forall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.utext {
+    margin-top: 6rem;
+    padding: 1px;   /* Margin collapses, keep the padding! */
+}
+
+.ipad {
+    position: relative;
+
+    z-index: 0;
+}
+
+.iphone {
+    position: absolute;
+    left: 57vw;
+    z-index: 3;
+    margin-top: 9rem;
+}
+
+/* --------------What we do -----------------------*/
+
+.whatwedo {
+    position: relative;
+    z-index: 2;
+    padding: 1px;     /* Margin collapses, keep the padding! */
+    margin-top: -7rem;
+    background-color: #fff;
+}
+
+.wtext {
+    max-width: 1200px;
+    width: 85% ;
+    margin:auto;
+}
+
+.what {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    padding: 3rem;
+}
+
+.what > img {
+    width: 100%;
+    height: auto;
+}
+
+.what img {
+    align-self: center;
+}
+
+.what img:hover {
+    box-shadow: 10px 10px #95e1d3;
+    transition: 0.35s;
+}
+
+
+.wtable {
+    border: 1px solid #cecece;
+    height: 370px;
+    width:555px;
+    justify-self: center;
+}
+
+.tab {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin: -px 0;
+    padding: 0 1rem;
+}
+
+.photography {
+    border-bottom: 1px solid #cecece;
+}
+
+.creativity {
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+}
+
+ /* -------------------Quote------------------------*/
+.quote {
+    background-color: #f0f0f0;
+    margin-top: 3rem;
+}
+
+.bquote {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+    grid-template-areas:
+    "chat blockq blockq blockq"
+    "chat bar2 john .";
+}
+
+.chat {
+    grid-area: chat;
+    padding: 1rem;
+}
+
+.bar2 {
+    grid-area: bar2;
+    align-self: end;
+}
+
+.john {
+    grid-area: john;
+    align-self: start;
+}
+.bquote ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: start;
+    margin-top: -2rem;
+}
+
+.bquote li {
+    list-style: none;
+    align-self: start;
+}
+
+.li1 { justify-self: end;}
+
+.li2 {margin-top: -2rem;}
+
+blockquote{
+    grid-area: blockq;
+    align-self: end;
+    margin-top: 2.5rem;
+    display: inline-block;
+    color: #929292;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+/*--------------------------- Who we are------CENTER IMAGESSSSS------------------*/
+.whoweare {
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+}
+
+.whophotos {                            /* change size on media */
+    max-width: 1200px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 100%));
+    gap: 2rem;
+}
+.whophotos img {
+    width: 100%;
+}
+
+.whophotos img:hover {
+    box-shadow: 10px 10px #95e1d3;
+    transition: 0.35s;
+}
+
+/*--------------------- Logos piece ------------------------------*/
+.allthoselogos {
+    padding:3rem 0 10rem 0;
+    background-color: #f8f8f8;
+}
+
+}
+.logoz {
+    margin-top: -12rem;
+}
+
+/*-----------------What We do ----------------------*/
+.whattext {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery img {
+    width:100%;
+}
+
+.img1 {grid-columns:1/2; grid-row: 1/2; }
+.img2 {grid-columns:1/2; grid-row: 2/3; }
+.img3 {grid-columns:2/3; grid-row: 1/2; }
+.img4 {grid-columns:2/3; grid-row: 2/3; }
+.img5 {grid-columns:1/1; grid-row: 1/3; }
+.img6 {grid-columns:1/1; grid-row: 1/2; }
+.img7 {grid-columns:2/3; grid-row: 2/3; }
+
+/*----------------------Qoute 2-------------------------------*/
+
+.quote2 {
+    padding: 3rem;;
+}
+
+/* -------------------Happy clients -----------------------------*/
+
+.happyclients {
+    height: 100vh;
+    background-image: url(/img/forall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.happy {
+    padding: 1px;  /* Margin collapses, keep the padding! */
+    margin-top: 1.5rem;
+}
+
+.happy h3 {
+    margin-bottom: -1rem;
+}
+
+.clients {
+    margin: 0.5rem auto;
+    max-width: 1200px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 0.15fr 1fr 0.15fr 1fr;
+    gap:0.25rem;
+    text-align: left;
+    justify-content: center;
+}
+
+.italic {
+    font-style: italic;
+    margin: -1rem 0;
+}
+
+.bar4 {
+    margin: 2rem 0 1rem 0 ;
+    width: 60px;
+    border-bottom: 3px solid #e77474;
+}
+
+.clients img {
+    margin: 0.35rem;
+    width: 90px;
+}
+
+/*--------------------Our Stories-----------------------*/
+
+.blog {
+    max-width: 1200px;
+    width: 95%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 80%));
+    gap: 2rem;
+}
+
+.blogimg > img {
+    width: 100%;
+}
+
+.blogimgp {
+    position: relative;
+    top: -12vh;
+    left: -14vw;
+    display: inline-block;
+    width: 45px;
+    background-color: #95e1d3;
+}
+
+.ital {
+    margin-top: -3rem;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.bold {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.views {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.v1, .v2  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.v1, .v2 p { padding:0 1.6rem 0 0; }
+
+.views img { align-self: center; }
+
+.smol {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* -------------------------Map----------------------------*/
+
+.map {
+    height: 25vh;
+    background-image: url(/img/mapbckg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map > img {
+    margin-bottom: -2rem;
+}
+
+.mapt {
+    margin-bottom: -2rem;
+    color: #e77474;
+}
+
+.mapcont{
+    padding: 2.5rem 0 1rem 0;
+}
+
+/* ---------------------------Footer ---------------------------*/
+.foocont {
+    margin: 2rem auto;
+    width: 95%;
+    max-width: 1200px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 1.5rem;
+}
+
+.foo1 {
+    margin-top: -1rem;
+}
+
+.foo1 > h3 {
+    color: #cecece;
+    text-transform: none;
+    font-size: 2.25rem;
+}
+
+.move { margin-bottom: 1.75rem; }
+
+.foo1 > p { font-size: 0.85rem; }
+
+.foo1t { margin: 0.5rem; }
+
+.foo1t > h6 {display: inline;}
+
+.foo1t > p {
+    padding:5px;
+    display: inline;
+    font-size: 0.75rem;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.foo1follow {
+    margin-bottom: 2.3rem;;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 0.8rem;
+    border-top: 1px solid #cecece;
+}
+
+.subscribe {
+    margin: 1.5rem 0 3rem 0;
+    display: flex;
+}
+
+ input[type=email] {
+     width:150px;
+     padding: 0.5rem;
+     font-family: 'Roboto', sans-serif;
+     font-style: italic;
+     color: #929292;
+     border: 1px solid #cecece;
+ }
+
+input[type=submit] {
+    margin-left: -4px;
+    padding: 0.625rem;
+    background-color: #95e1d3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border:none;
+}
+
+
+
+.fblogs {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    gap: 1rem;
+}
+
+.fblogs > img { align-self: start;}
+
+.fooposttext { margin-top: -1.2rem;}
+
+.fooposttext  h6 { font-size: 0.75rem;}
+
+.fooposttext  p {
+    margin-top: -1.75rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+
+
+.foogallery {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.15rem;
+}
+
+.foogallery img {
+    width: 85px;
+}
+
+.foo3 a {
+    display: block;
+    padding: 0.5rem 0 ;
+    text-decoration: none;
+    color: #cecece;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.foo3 a:hover { color: #fce38a;}
+
+
+.foo4 { border-top: 1px solid #cecece;}
+
+.foo4 > p {
+    color: #303030;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.foo4 a {
+    color: #e77474;
+    text-decoration: none;
+}
+
+.foo4 a:hover {
+    color: #fce38a;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! Media Queries !!!!!!!!!!!!!!!!!!!!!!! */
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: rgb(151, 199, 151);
+    }
+}
