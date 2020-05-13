@@ -228,7 +228,7 @@ h6 {
 .unique {
     margin-top: 4rem;
     height: 100vh;
-    background-image: url(/img/forall.jpg);
+    background-image: url(img/forall.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -438,7 +438,7 @@ blockquote{
 
 .happyclients {
     height: 100vh;
-    background-image: url(/img/forall.jpg);
+    background-image: url(img/forall.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -540,7 +540,7 @@ blockquote{
 
 .map {
     height: 25vh;
-    background-image: url(/img/mapbckg.jpg);
+    background-image: url(img/mapbckg.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
