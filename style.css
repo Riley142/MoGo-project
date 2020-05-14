@@ -14,7 +14,7 @@ font-family: 'Kaushan Script', cursive;
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #f8f8f8;
+    background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -113,7 +113,7 @@ h1 {
 .btmnav { margin: 0; }
 
 .btmnav ul {
-    margin: 10rem;
+    margin: 7rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -169,7 +169,7 @@ p {
 
 .abtphotos {                            /* change size on media */
     max-width: 1200px;
-    margin-top: 5rem;
+    margin: 5rem auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 80%));
     gap: 2rem;
@@ -209,11 +209,6 @@ h5 {
 }
 
 /* -----------------Amazing Services ------------------*/
-.amazingservices {
-    background-color: fff#;
-}
-
-
 h6 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -277,6 +272,7 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-items: center;
+    justify-content: center;
     padding: 3rem;
 }
 
@@ -375,7 +371,7 @@ blockquote{
     font-style: italic;
 }
 
-/*--------------------------- Who we are------CENTER IMAGESSSSS------------------*/
+/*--------------------------- Who we are------------------------*/
 .whoweare {
     margin: auto;
     max-width: 1200px;
@@ -501,8 +497,8 @@ blockquote{
 
 .blogimgp {
     position: relative;
-    top: -12vh;
-    left: -14vw;
+    top: -14vh;
+    left: -12vw;
     display: inline-block;
     width: 45px;
     background-color: #95e1d3;
@@ -565,14 +561,20 @@ blockquote{
 
 /* ---------------------------Footer ---------------------------*/
 .foocont {
-    margin: 2rem auto;
-    width: 95%;
-    max-width: 1200px;
+    max-width: 1100px;
+    background-color: #f8f8f8;
+    margin: auto;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr 0.5fr;
     gap: 1.5rem;
 }
+
+.foo1, .foo2, .foo3 {
+    margin: auto;
+    width: 85%;
+}
+
 
 .foo1 {
     margin-top: -1rem;
@@ -625,7 +627,7 @@ blockquote{
  }
 
 input[type=submit] {
-    margin-left: -4px;
+    margin: auto 0.5rem;
     padding: 0.625rem;
     background-color: #95e1d3;
     font-family: 'Montserrat', sans-serif;
@@ -665,7 +667,7 @@ input[type=submit] {
 }
 
 .foogallery img {
-    width: 85px;
+    width: 100%;
 }
 
 .foo3 a {
@@ -698,8 +700,180 @@ input[type=submit] {
 }
 
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!! Add Media Queries !!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! Media Queries !!!!!!!!!!!!!!!!!!!!!!! */
 
-@media only screen and (max-width: 800px) {
-    
+
+@media only screen and (max-width: 860px) {
+
+ /* ----------------- Nav---------------------- */
+
+ nav {
+    grid-template-columns: 1fr;
+}
+nav ul {
+    margin-top: -0.25rem;
+}
+
+.logo {
+    margin-top: 0.3rem;
+}
+
+/* ----------Hero---------- */
+.btmnav ul {
+    margin:  25rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*-------- Unique ----------*/
+
+.unique {
+    height: auto;
+}
+
+
+/* ------------What we do ------------*/
+
+.what {
+    grid-template-columns: 1fr;
+}
+
+.what > img {
+    width: 375px;
+}
+
+.wtable {
+    height: 420px;
+    width: 375px;
+}
+
+
+/* ------Happy clients -------*/
+
+.happyclients {
+    height: auto;
+    background-color: #f0f0f0;
+    background-image: none;
+}
+
+.clients {
+    width: 95%;
+    grid-template-columns: 0.15fr 1fr ;
+}
+
+/*--------------------Our Stories-----------------------*/
+
+.blog {
+    width: 65%;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    justify-items: start;
+}
+
+.post > h6 {
+    margin-top: -4rem;
+}
+
+.blogimgp {
+    left: -32vw;
+}
+
+
+/*-----Footer ------*/
+    .foocont {
+        display: block;
+        text-align: center;
+    }
+
+    .foogallery {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+html {
+    margin-top: -0.3rem;
+}
+
+ /* ---------- Nav------------- */
+nav {
+    display: block;
+}
+
+nav ul {
+    display: block;
+    align-self: center;
+    margin: 1.5rem 3rem 0 1rem;
+}
+
+.btmnav ul { display: none; }
+/*--------About----------*/
+.abtphotos {
+    display: block;
+}
+
+/*------ Counter ------ */
+h5 {
+    font-size: 2rem;
+}
+
+/* -----Amazing Services ----*/
+.serv {
+    width: 98%;
+    gap: 0.5rem;
+}
+
+/* ------What we do ------*/
+.what > img {
+    width: 325px;
+}
+
+.wtable {
+    height: 450px;
+    width: 325px;
+}
+
+.bquote > img {
+    width: 50px;
+    height: auto;
+    align-self: center;
+}
+
+/* ------Who We are -----*/
+.whophotos {
+    grid-template-columns: 1fr;
+
+}
+.whophotos img {
+    width: 60%;
+    margin: auto;
+}
+
+/*-----------------What We do ----------------------*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img1 {grid-columns:1/2; grid-row: 1/2; }
+.img2 {grid-columns:1/2; grid-row: 2/3; }
+.img3 {grid-columns:2/3; grid-row: 1/2; }
+.img4 {grid-columns:2/3; grid-row: 2/3; }
+.img5 {grid-columns:1/2; grid-row: 3/5; }
+.img6 {grid-columns:2/3; grid-row: 3/4; }
+.img7 {grid-columns:2/3; grid-row: 4/5; }
+
+/*-----Footer ------*/
+.foocont {
+    display: block;
+    text-align: center;
+}
+
+.foogallery {
+    width: 50%;
+    margin: auto;
+}
 }
